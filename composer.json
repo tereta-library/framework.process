@@ -3,13 +3,13 @@
     "type": "library",
     "autoload": {
         "psr-4": {
-            "Tereta\\FrameworkProcess\\": "src/"
+            "Tereta\\Framework\\Process\\": "src/"
         }
     },
     "authors": [
         {
             "name": "Tereta Alexander",
-            "email": "atereta@gomage.com"
+            "email": "tereta.alexander@gmail.com"
         }
     ],
     "require": {}
