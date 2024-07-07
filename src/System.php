@@ -61,7 +61,7 @@ if (PHP_SAPI === 'cli') {
     $arguments = $_SERVER['argv'];
     $initialFile = array_shift($arguments);
     if (__FILE__ === $initialFile) {
-        require_once __DIR__ . '/../../vendor/autoload.php';
+        require_once __DIR__ . '/../../../autoload.php';
 
         $config = array_shift($arguments);
         System::runProcess($config);
