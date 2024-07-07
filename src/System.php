@@ -14,6 +14,14 @@ use Framework\Process\Abstract\System as ProcessAbstract;
 class System
 {
     /**
+     * @return string
+     */
+    public static function getClassFile(): string
+    {
+        return __FILE__;
+    }
+
+    /**
      * @throws ReflectionException
      */
     public static function runProcess(string $config): void
