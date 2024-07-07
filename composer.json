@@ -1,0 +1,16 @@
+{
+    "name": "tereta/framework.process",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Tereta\\FrameworkProcess\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tereta Alexander",
+            "email": "atereta@gomage.com"
+        }
+    ],
+    "require": {}
+}
