@@ -58,7 +58,7 @@ class Facade
         $process = proc_open($command, $descriptorSpec, $pipes);
         if (!is_resource($process)) {
             $output = fgets($pipes[0]);
-            throw new Exception("Can not run the ${class}->{$method}(...) process: ${output}");
+            throw new Exception("Can not run the {$class}->{$method}(...) process: {$output}");
         }
 
         $initialDataEncoded = '';
@@ -91,7 +91,7 @@ class Facade
         }
 
         if (!$initialData) {
-            throw new Exception("Can not run the ${class}->{$method}(...)\n  Process: ${command}\n  Error:  $error");
+            throw new Exception("Can not run the {$class}->{$method}(...)\n  Process: {$command}\n  Error:  $error");
         }
 
         $pid = $initialData['pid'];
@@ -99,7 +99,7 @@ class Facade
         try {
             $api = (new ProcessApi(self::$pidDirectory))->load($pid, $token);
         } catch (Exception $e) {
-            throw new Exception("Can not run the ${class}->{$method}(...)\n  Process: {$command}\n  Message: {$e->getMessage()}");
+            throw new Exception("Can not run the {$class}->{$method}(...)\n  Process: {$command}\n  Message: {$e->getMessage()}");
         }
 
         return $api;
