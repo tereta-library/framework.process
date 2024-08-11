@@ -1,5 +1,8 @@
 {
     "name": "tereta/framework.process",
+    "description": "Part of framework to work with async processes",
+    "license": "Apache-2.0",
+    "version": "0.0.19",
     "type": "library",
     "autoload": {
         "psr-4": {
